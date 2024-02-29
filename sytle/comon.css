@@ -129,18 +129,18 @@
 
 /* section */
 #mainSection {
-    padding-top: 25px;
+    padding-top: 5%;
     border-bottom: 3px solid black;
 }
 #inner_main{
-    padding-left: 15px;
+    padding-left: 3%;
 }
 #content{
-    padding-top: 35px;
-    padding-left: 8px;
+    padding-top: 10%;
+    padding-left: 5%;
 }
 #content p{
-    padding-bottom: 25px;
+    padding-bottom: 5%;
 }
 #content p:last-child{
     padding-bottom: 30px;
