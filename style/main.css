@@ -31,7 +31,7 @@
 #header h1 a {
     display: block;
     height: 51px;
-    background: url(/html/image/logo_header.png);
+    background: url(/KimKyeongJe/image/logo_header.png);
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -110,7 +110,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url(/html/image/back1.png) no-repeat center/cover;
+    background: url(/KimKyeongJe/image/back1.png) no-repeat center/cover;
     position: relative;
 }
 
@@ -165,7 +165,7 @@
 #solution .solution {
     width: 100%;
     padding: 180px 20px 40px;
-    background: url(/html/image/bg_solution.png) no-repeat;
+    background: url(/KimKyeongJe/image/bg_solution.png) no-repeat;
 }
 
 #solution .hostion {
@@ -336,7 +336,7 @@ footer {
 }
 
 footer .info {
-    background: url(/html/image/footer.png) no-repeat;
+    background: url(/KimKyeongJe/image/footer.png) no-repeat;
     padding-left: 240px;
 }
 
@@ -348,7 +348,7 @@ footer ul {
 footer ul li:nth-of-type(1) {
     width: 32px;
     height: 32px;
-    background: url(/html/image/ft.png);
+    background: url(/KimKyeongJe/image/ft.png);
     background-position: left;
     padding-right: 50px;
 }
@@ -356,7 +356,7 @@ footer ul li:nth-of-type(1) {
 footer ul li:nth-of-type(2) {
     width: 32px;
     height: 32px;
-    background: url(/html/image/ft.png) no-repeat;
+    background: url(/KimKyeongJe/image/ft.png) no-repeat;
     background-position-x: -52px;
 }
 

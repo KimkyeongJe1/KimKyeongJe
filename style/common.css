@@ -45,7 +45,7 @@ address {
 @font-face{
     font-family: 'Segoe UI';
     src: local(※),
-    url(/html/webfont/segoeui.woff) Segoe UI('woff');
+    url(/KimKyeongJe/webfont/segoeui.woff) Segoe UI('woff');
 }
 body{
     font-family: 'Segoe UI';
