@@ -12,7 +12,13 @@
     align-items: center;
     height: 100px;
     left: 0;
-    background-color: rgb(27, 27, 27);
+    /* background-color: rgb(27, 27, 27); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    backdrop-filter: blur(15px);
 }
 
 #header h1 {
@@ -26,7 +32,7 @@
 #header h1 a {
     display: block;
     height: 51px;
-    background: url(../image/logo_header.png);
+    background: url(/image/logo_header.png);
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -99,13 +105,13 @@
 /* 헤더끝 */
 /* 메인 */
 #slogan {
-    height: 700px;
+    height: 860px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url(../image/back1.png) no-repeat center/cover;
+    background: url(/image/back1.png) no-repeat center/cover;
     position: relative;
 }
 
@@ -160,7 +166,7 @@
 #solution .solution {
     width: 100%;
     padding: 180px 20px 40px;
-    background: url(../image/bg_solution.png) no-repeat;
+    background: url(/image/bg_solution.png) no-repeat;
 }
 
 #solution .hostion {
@@ -196,7 +202,7 @@
 
 /* customerBoard */
 div+div {
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(188, 188, 188);
 }
 
 #customerBoard {
@@ -225,12 +231,12 @@ div+div {
     position: absolute;
     top: -10px;
     left: 62px;
-    color: #ccc;
+    color: #000000;
 }
 
 #customerBoard h3::after {
     content: '';
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 0, 0);
     display: block;
     padding-bottom: 20px;
 }
@@ -260,24 +266,24 @@ div+div {
     position: absolute;
     top: 7px;
     right: 24px;
-    color: #ccc;
+    color: #666666;
 }
 
 #newsNotice {
     position: relative;
-    color: rgb(255, 207, 105);
+    color: rgb(0, 0, 0);
 }
 
 #newsNotice .more {
     position: absolute;
     top: 7px;
     right: 28px;
-    color: #ccc;
+    color: #666666;
 }
 
 #SecrurityNews dl {
     padding-bottom: 40px;
-    color: #ffffff;
+    color: #000000;
 }
 
 #SecrurityNews dt {
@@ -287,7 +293,7 @@ div+div {
 }
 
 #SecrurityNews h3 span {
-    color: rgb(255, 207, 105);
+    color: rgb(0, 0, 0);
 }
 
 #newsNotice ul li {
@@ -298,7 +304,7 @@ div+div {
 #newsNotice ul li a {
     font-size: 18px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: block;
     width: 80%;
     white-space: nowrap;
@@ -331,7 +337,7 @@ footer {
 }
 
 footer .info {
-    background: url(../image/footer.png) no-repeat;
+    background: url(/image/footer.png) no-repeat;
     padding-left: 240px;
 }
 
