@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+/* 헤더 */
+#header {
+    /* height: 100px;
+    background-color: rgb(161, 167, 74);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    left: 0;
+    background-color: rgb(27, 27, 27);
+}
+
+#header h1 {
+    position: absolute;
+    left: 20px;
+    top: 23px;
+    width: 249px;
+}
+
+
+#header h1 a {
+    display: block;
+    height: 51px;
+    background: url(../image/logo_header.png);
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#header #membership {
+    /* order: 1; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#membership {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+
+#memvership li.goLogin {
+    position: relative;
+    padding-right: 9px;
+}
+
+#membership li.goLogin::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 34px;
+    width: 1px;
+    height: 11px;
+    background-color: rgb(255, 255, 255);
+}
+
+#membership .goJoin {
+    padding-left: 20px;
+}
+
+#membership li a {
+    font-size: 14px;
+    color: white;
+}
+
+#gnb ul {
+    display: flex;
+}
+
+#gnb ul li {
+    margin: 0 5px;
+}
+
+#gnb ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#gnb ul li a:hover {
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(255, 207, 105);
+}
+
+/* 헤더끝 */
+/* 메인 */
+#slogan {
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(../image/back1.png) no-repeat center/cover;
+    position: relative;
+}
+
+#slogan p {
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 10px black;
+    position: relative;
+    /* z-index: 1; */
+}
+
+#slogan a {
+    color: #fff;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+    border-radius: 0 20px;
+    backdrop-filter: blur(6px);
+    position: relative;
+    font-size: 24px;
+    text-align: center;
+    /* z-index: 1; */
+}
+
+#slogan::before {
+    content: '';
+    display: block;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.15;
+    text-transform: capitalize;
+}
+
+/* solution */
+#solutionWrap {
+    background: #353535;
+}
+
+#solution {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#solution .solution {
+    width: 100%;
+    padding: 180px 20px 40px;
+    background: url(../image/bg_solution.png) no-repeat;
+}
+
+#solution .hostion {
+    background-position-x: -10px;
+    background-position-y: 60px;
+}
+
+#solution .security {
+    background-position-x: -410px;
+    background-position-y: 62px;
+}
+
+#solution .payment {
+    background-position-x: -820px;
+    background-position-y: 60px;
+}
+
+#solution .solution a {
+    color: #d0d0d0;
+}
+
+#solution .solution h3 {
+    padding-bottom: 12px;
+    letter-spacing: 0.5px;
+    font-size: 28px;
+}
+
+#solution .solution p {
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* customerBoard */
+div+div {
+    background-color: rgb(117, 117, 117);
+}
+
+#customerBoard {
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+    position: relative;
+    padding-top: 60px;
+}
+
+#customerBoard h3 {
+    font-size: 1.75em;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#customerBoard .more::after {
+    content: '>';
+    font-size: 28px;
+    /* padding-left: 90%; */
+    font-weight: 100;
+    position: absolute;
+    top: -10px;
+    left: 62px;
+    color: #ccc;
+}
+
+#customerBoard h3::after {
+    content: '';
+    border-bottom: 1px solid rgb(255, 255, 255);
+    display: block;
+    padding-bottom: 20px;
+}
+
+#newsNotice .more::after {
+    content: '>';
+    font-size: 28px;
+    font-weight: 100;
+    position: absolute;
+    top: -10px;
+    left: 62px;
+}
+
+#customerBoard #SecrurityNews {
+    width: 45%;
+}
+
+#newsNotice {
+    width: 45%;
+}
+
+#SecrurityNews {
+    position: relative;
+}
+
+#SecrurityNews .more {
+    position: absolute;
+    top: 7px;
+    right: 24px;
+    color: #ccc;
+}
+
+#newsNotice {
+    position: relative;
+    color: rgb(255, 207, 105);
+}
+
+#newsNotice .more {
+    position: absolute;
+    top: 7px;
+    right: 28px;
+    color: #ccc;
+}
+
+#SecrurityNews dl {
+    padding-bottom: 40px;
+    color: #ffffff;
+}
+
+#SecrurityNews dt {
+    padding-bottom: 16px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#SecrurityNews h3 span {
+    color: rgb(255, 207, 105);
+}
+
+#newsNotice ul li {
+    padding-bottom: 14px;
+    position: relative;
+}
+
+#newsNotice ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    display: block;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#newsNotice li span {
+    position: absolute;
+    left: 85%;
+    top: 0;
+}
+
+/* 메인끝 */
+/* 푸터 */
+#footerwrap {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding-top: 50px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+footer .info {
+    background: url(../image/footer.png) no-repeat;
+    padding-left: 240px;
+}
+
+footer ul {
+    display: flex;
+    width: 120px;
+}
+
+footer ul li:nth-of-type(1) {
+    width: 32px;
+    height: 32px;
+    background: url(../image/ft.png);
+    background-position: left;
+    padding-right: 50px;
+}
+
+footer ul li:nth-of-type(2) {
+    width: 32px;
+    height: 32px;
+    background: url(../image/ft.png) no-repeat;
+    background-position-x: -52px;
+}
+
+footer ul li a {
+    display: none;
+}
+/* 추가 */
+#solution h3::first-letter{
+    font-size: 48px;
+    color: rgb(255, 207, 105);
+}

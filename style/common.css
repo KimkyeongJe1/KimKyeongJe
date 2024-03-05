@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* 초기화 */
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+address {
+    font-style: normal;
+}
+
+/* 초기화 끝 */
+/* 전체화 */
+
+@font-face{
+    font-family: 'Segoe UI';
+    src: local(※),
+    url(../webfont/segoeui.woff) Segoe UI('woff');
+}
+body{
+    font-family: 'Segoe UI';
+    min-width: 1200px;
+}
+
+/* font 컷~ ^^ @>--- */
