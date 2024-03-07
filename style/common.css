@@ -8,48 +8,276 @@
 body,
 h1,
 h2,
-h3,
 p,
-ul,
-li,
-a,
-dl,
-dd {
+ul {
     margin: 0;
     padding: 0;
-}
-
-ul li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
-.hidden {
+li {
+    list-style: none;
+}
+
+/* 1221 이상 */
+
+#header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
     position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
+    top: 30px;
+    left: 50px;
 }
 
-address {
-    font-style: normal;
+
+header h1 a {}
+
+/* 멤버 */
+
+#member {
+    position: absolute;
+    top: 35;
+    right: 50px;
 }
 
-/* 초기화 끝 */
-/* 전체화 */
-
-@font-face{
-    font-family: 'Segoe UI';
-    src: local(※),
-    url(/KimKyeongJe/webfont/segoeui.woff) Segoe UI('woff');
-}
-body{
-    font-family: 'Segoe UI';
-    min-width: 1200px;
+#member ul {
+    display: flex;
 }
 
-/* font 컷~ ^^ @>--- */
+#member ul li {
+    margin-left: 20px;
+}
+
+/* gnb */
+#gnbView {
+    display: none;
+}
+
+#gnb ul {
+    display: flex;
+}
+
+#gnb ul li {
+    margin: 0 20px;
+}
+
+#gnb ul li:nth-of-type(1) {
+    margin-left: 0;
+}
+
+/* slogan */
+#sloganWrap {
+    background: url(../img/bg.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 45vw;
+}
+
+#sloganWrap #slogan {
+    color: white;
+}
+
+#slogan {
+    width: 1200px;
+    height: 12vw;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: center;
+    align-items: start;
+    padding-top: 10%;
+    padding-left: 5%;
+    position: relative;
+}
+
+#sloganWrap #slogan h2 {
+    font-size: 6vw;
+    margin-bottom: 20px;
+}
+
+
+#sloganWrap #slogan p {
+    font-size: 2vw;
+}
+
+/* 본문 컨텐츠 */
+#content {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#content>section {
+    width: 23.5%;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+#content>section h2 {
+    text-align: center;
+    padding-top: 40%;
+}
+#sloganWrap{
+    position: relative;
+}
+#sloganWrap::before{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+/* 푸터 */
+#footer {
+    height: 150px;
+    font-size: 50px;
+    color: white;
+    background-color: #062706;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+@media screen and (max-width:1220px) {
+    #slogan {
+        width: auto;
+        padding-left: 35%;
+    }
+
+    #content {
+        width: auto;
+    }
+
+    #content>section {
+        background-color: rgb(70, 128, 178);
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    #sloganWrap {
+        width: 100%;
+        height: 110vw;
+    }
+    #slogan {
+        width: auto;
+        padding-left: 5%;
+        padding-top: 70%;
+    }
+
+    #sloganWrap #slogan h2 {
+        font-size: 8vw;
+        margin-bottom: 20px;
+    }
+
+
+    #sloganWrap #slogan p {
+        font-size: 3.5vw;
+    }
+
+    #content {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+
+    #content>section {
+        width: 48%;
+        height: 300px;
+        background-color: rgb(58, 163, 255);
+        margin-top: 10px;
+    }
+    #gnbView{
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        text-indent: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        clip: rect( 0 0 0 0);
+    }
+    #gnbView::before{
+        content: '';
+        position: absolute;
+        top: 18px;
+        left: 10px;
+        width: 30px;
+        border-bottom: 1px solid black;
+    }
+    #gnbView::after{
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        width: 30px;
+        border-bottom: 1px solid black;
+    }
+    /* 일단 보여주기 */
+    #gnb{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: rgb(58, 163, 255);
+        box-shadow: 2px 0px 25px black;
+        z-index: 999;
+        transition: 0.4s;
+    }
+    #gnb ul{
+        display: block;
+    }
+    #gnb ul li{
+        margin: 0;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        line-height: 100px;
+        text-align: center;
+        font-size: 32px;
+    }
+    #gnb ul li a{
+        color: white;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    
+    #content {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    #content>section {
+        width: 100%;
+        background-color: rgb(113, 189, 255);
+        margin-top: 10px;
+    }
+}
